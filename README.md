@@ -2,8 +2,6 @@
 
 Repository con tutti gli esempi (notebook/script SQL) usati nelle sezioni del corso, basati sul database di esempio **AdventureWorks** di Microsoft.
 
-Il setup è pensato per richiedere il minimo indispensabile: **Docker Desktop** + **Visual Studio Code**. Non serve installare SQL Server sul PC.
-
 ## 🚀 Avvio in 3 passi
 
 1. **Installa Visual Studio Code** (se non già presente): https://code.visualstudio.com/
@@ -18,7 +16,7 @@ Il setup è pensato per richiedere il minimo indispensabile: **Docker Desktop** 
    In alternativa: apri la scheda Estensioni (`Ctrl+Shift+X`), cerca ciascun nome e clicca "Install".
 
 3. **Collega la tua istanza SQL Server**
-   Questa repo non fornisce un database: usa una tua istanza SQL Server esistente (locale o cloud). Se non hai ancora il database di esempio, scarica e ripristina **AdventureWorks2019**:
+   Scarica backup db da cartella specifica e fai restore con nome AdventureWorks su istanza locale
    - Backup ufficiale Microsoft: https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure
    - Scarica il file `AdventureWorks2019.bak`
    - Ripristinalo con SSMS (tasto destro su *Databases* → *Restore Database*) oppure da riga di comando:
