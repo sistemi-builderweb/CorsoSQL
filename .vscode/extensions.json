@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "ms-mssql.mssql",
+    "MEngRBatinov.mssql-snippets",
+    "MEngRBatinov.mssql-scripts",
+    "TaoKlerks.poor-mans-t-sql-formatter-vscode"
+  ]
+}
