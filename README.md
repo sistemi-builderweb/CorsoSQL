@@ -16,7 +16,7 @@ Il setup richiede solo Visual Studio Code e una tua istanza SQL Server locale su
    Si apre VSCode con l'indirizzo della repo già inserito: scegli solo la cartella dove salvarla e, a fine clonazione, clicca **Apri** quando richiesto.
 
    <details>
-   <summary><sub>Se il link non funziona (capita su alcuni sistemi/browser), clicca qui per il metodo manuale</sub></summary>
+   <summary><sub>Se il link non funziona (metodo manuale)</sub></summary>
 
    - <sub>Premi `Ctrl+Shift+P` (si apre la Command Palette in alto)</sub>
    - <sub>Digita `Git: Clone` e premi Invio</sub>
@@ -33,7 +33,9 @@ Il setup richiede solo Visual Studio Code e una tua istanza SQL Server locale su
    - **MSSQL Snippets** — snippet T-SQL per scrivere query più in fretta
    - **Poor Man's T-SQL Formatter** — formattazione automatica del codice T-SQL
 
-   In alternativa: apri la scheda Estensioni (`Ctrl+Shift+X`), cerca ciascun nome e clicca "Install".
+   <details>
+   <sub>In alternativa: apri la scheda Estensioni (`Ctrl+Shift+X`), cerca ciascun nome e clicca "Install".</sub>
+   </details>
 
 3. **Ripristina il database sulla tua istanza SQL Server locale**
    Ti verrà fornito il file di backup `AdventureWorks.bak`. Ripristinalo così:
