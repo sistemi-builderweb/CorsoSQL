@@ -12,7 +12,7 @@ Il setup richiede solo Visual Studio Code e una tua istanza SQL Server locale su
 2. **Clona la repo direttamente da dentro VSCode** (non serve terminale né sapere Git):
 
    **Scorciatoia più veloce:** clicca questo link — se il browser chiede il permesso di aprire VSCode, conferma:
-   [👉 Clona CorsoSQL in VSCode]([vscode://vscode.git/clone?url=https://github.com/sistemi-builderweb/CorsoSQL.git](https://vscode.dev/redirect?url=vscode://vscode.git/clone?url=https://github.com/sistemi-builderweb/CorsoSQL.git))
+   [👉 Clona CorsoSQL in VSCode](https://vscode.dev/redirect?url=vscode://vscode.git/clone?url=https://github.com/sistemi-builderweb/CorsoSQL.git)
    Si apre VSCode con l'indirizzo della repo già inserito: scegli solo la cartella dove salvarla e, a fine clonazione, clicca **Apri** quando richiesto.
 
    <details>
