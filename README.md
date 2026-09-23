@@ -27,7 +27,7 @@ Il setup richiede solo Visual Studio Code e una tua istanza SQL Server locale su
 
    </details>
 
-A questo punto la cartella `CorsoSQL` è aperta in VSCode. Installa queste 4 estensioni (se VSCode ti propone da solo un popup "Install All" / "Show Recommendations" in basso a destra, puoi usare quello — ma non sempre compare, quindi installale così):
+   A questo punto la cartella `CorsoSQL` è aperta in VSCode. Installa queste 4 estensioni (se VSCode ti propone da solo un popup "Install All" / "Show Recommendations" in basso a destra, puoi usare quello — ma non sempre     compare, quindi installale così):
    - Apri il pannello Estensioni: `Ctrl+Shift+X`
    - In cima alla lista, sotto "WORKSPACE RECOMMENDATIONS", vedrai le 4 estensioni consigliate per questa repo: clicca **Install** su ciascuna
    - Se quella sezione non appare, cerca ciascun nome nella casella di ricerca in alto e clicca **Install**:
