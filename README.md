@@ -16,7 +16,7 @@ Il setup richiede solo Visual Studio Code e una tua istanza SQL Server locale su
    Si apre VSCode con l'indirizzo della repo già inserito: scegli solo la cartella dove salvarla e, a fine clonazione, clicca **Apri** quando richiesto.
 
    <details>
-   <summary><sub>Se il link non funziona (capita su alcuni sistemi/browser), clicca qui per il metodo manuale</sub></summary>
+   <summary><sub>Se il link non funziona (metodo manuale)</sub></summary>
 
    <sub>
 
