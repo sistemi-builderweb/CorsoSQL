@@ -16,18 +16,15 @@ Il setup richiede solo Visual Studio Code e una tua istanza SQL Server locale su
    Si apre VSCode con l'indirizzo della repo già inserito: scegli solo la cartella dove salvarla e, a fine clonazione, clicca **Apri** quando richiesto.
 
    <details>
-   <summary><sub>Se il link non funziona (metodo manuale)</sub></summary>
+   <summary><sub>Se il link non funziona (capita su alcuni sistemi/browser), clicca qui per il metodo manuale</sub></summary>
 
-   <sub>
+   - <sub>Premi `Ctrl+Shift+P` (si apre la Command Palette in alto)</sub>
+   - <sub>Digita `Git: Clone` e premi Invio</sub>
+   - <sub>Se è la prima volta, VSCode potrebbe chiederti di installare Git: segui il link proposto e installa (basta cliccare "Avanti" per tutta l'installazione), poi riavvia VSCode e ripeti questo passo</sub>
+   - <sub>Incolla questo indirizzo quando richiesto: `https://github.com/sistemi-builderweb/CorsoSQL.git`</sub>
+   - <sub>Scegli una cartella sul tuo PC dove salvarla (es. Desktop o Documenti)</sub>
+   - <sub>Quando la clonazione finisce, VSCode chiede "Apri il repository clonato?" → clicca **Apri** (o "Open")</sub>
 
-   - Premi `Ctrl+Shift+P` (si apre la Command Palette in alto)
-   - Digita `Git: Clone` e premi Invio
-   - Se è la prima volta, VSCode potrebbe chiederti di installare Git: segui il link proposto e installa (basta cliccare "Avanti" per tutta l'installazione), poi riavvia VSCode e ripeti questo passo
-   - Incolla questo indirizzo quando richiesto: `https://github.com/sistemi-builderweb/CorsoSQL.git`
-   - Scegli una cartella sul tuo PC dove salvarla (es. Desktop o Documenti)
-   - Quando la clonazione finisce, VSCode chiede "Apri il repository clonato?" → clicca **Apri** (o "Open")
-
-   </sub>
    </details>
 
    A questo punto la cartella `CorsoSQL` è aperta in VSCode. Alla prima apertura, VSCode propone da solo l'installazione delle estensioni consigliate (vedi `.vscode/extensions.json`): accetta con un click ("Install All"). Le estensioni sono:
