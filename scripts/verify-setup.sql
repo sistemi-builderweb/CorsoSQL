@@ -1,7 +1,7 @@
 -- Verifica rapida del setup: connessione OK + AdventureWorks presente e popolato.
 -- Esegui questo script dopo esserti connesso con l'estensione mssql (F5 / "Execute Query").
 
-USE AdventureWorks2019;
+USE AdventureWorks;
 GO
 
 SELECT
