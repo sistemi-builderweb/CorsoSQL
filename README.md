@@ -2,7 +2,7 @@
 
 Repository con tutti gli esempi (notebook/script SQL) usati nelle sezioni del corso, basati sul database di esempio **AdventureWorks** di Microsoft.
 
-Il setup è pensato per richiedere il minimo indispensabile: **Docker Desktop** + **Visual Studio Code**. Non serve installare SQL Server sul PC.
+Il setup richiede solo Visual Studio Code e una tua istanza SQL Server locale su cui ripristinare il backup fornito.
 
 ## 🚀 Avvio in 3 passi
 
@@ -12,16 +12,23 @@ Il setup è pensato per richiedere il minimo indispensabile: **Docker Desktop** 
 2. **Clona la repo direttamente da dentro VSCode** (non serve terminale né sapere Git):
 
    **Scorciatoia più veloce:** clicca questo link — se il browser chiede il permesso di aprire VSCode, conferma:
-   [👉 Clona CorsoSQL in VSCode](https://vscode.dev/redirect?url=vscode://vscode.git/clone?url=https://github.com/sistemi-builderweb/CorsoSQL.git)
+   [👉 Clona CorsoSQL in VSCode](vscode://vscode.git/clone?url=https://github.com/sistemi-builderweb/CorsoSQL.git)
    Si apre VSCode con l'indirizzo della repo già inserito: scegli solo la cartella dove salvarla e, a fine clonazione, clicca **Apri** quando richiesto.
 
-      **Se il link non funziona**, fallo a mano:
-      - Premi `Ctrl+Shift+P` (si apre la Command Palette in alto)
-      - Digita `Git: Clone` e premi Invio
-      - Se è la prima volta, VSCode potrebbe chiederti di installare Git: segui il link proposto e installa (basta cliccare "Avanti" per tutta l'installazione), poi riavvia VSCode e ripeti questo passo
-      - Incolla questo indirizzo quando richiesto: `https://github.com/sistemi-builderweb/CorsoSQL.git`
-      - Scegli una cartella sul tuo PC dove salvarla (es. Desktop o Documenti)
-      - Quando la clonazione finisce, VSCode chiede "Apri il repository clonato?" → clicca **Apri** (o "Open")
+   <details>
+   <summary><sub>Se il link non funziona (capita su alcuni sistemi/browser), clicca qui per il metodo manuale</sub></summary>
+
+   <sub>
+
+   - Premi `Ctrl+Shift+P` (si apre la Command Palette in alto)
+   - Digita `Git: Clone` e premi Invio
+   - Se è la prima volta, VSCode potrebbe chiederti di installare Git: segui il link proposto e installa (basta cliccare "Avanti" per tutta l'installazione), poi riavvia VSCode e ripeti questo passo
+   - Incolla questo indirizzo quando richiesto: `https://github.com/sistemi-builderweb/CorsoSQL.git`
+   - Scegli una cartella sul tuo PC dove salvarla (es. Desktop o Documenti)
+   - Quando la clonazione finisce, VSCode chiede "Apri il repository clonato?" → clicca **Apri** (o "Open")
+
+   </sub>
+   </details>
 
    A questo punto la cartella `CorsoSQL` è aperta in VSCode. Alla prima apertura, VSCode propone da solo l'installazione delle estensioni consigliate (vedi `.vscode/extensions.json`): accetta con un click ("Install All"). Le estensioni sono:
    - **SQL Server (mssql)** — connessione al server ed esecuzione query
@@ -31,11 +38,10 @@ Il setup è pensato per richiedere il minimo indispensabile: **Docker Desktop** 
 
    In alternativa: apri la scheda Estensioni (`Ctrl+Shift+X`), cerca ciascun nome e clicca "Install".
 
-3. **Collega la tua istanza SQL Server**
-   Questa repo non fornisce un database: usa una tua istanza SQL Server esistente (locale o cloud). Se non hai ancora il database di esempio, scarica e ripristina **AdventureWorks2019**:
-   - Backup ufficiale Microsoft: https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure
-   - Scarica il file `AdventureWorks2019.bak`
-   - Ripristinalo con SSMS (tasto destro su *Databases* → *Restore Database*) oppure da riga di comando:
+3. **Ripristina il database sulla tua istanza SQL Server locale**
+   Ti verrà fornito il file di backup `AdventureWorks.bak`. Ripristinalo così:
+   - In **SSMS** (o dall'estensione mssql di VSCode): tasto destro su *Databases* → *Restore Database* → seleziona il file `.bak` → nel campo *Database* scrivi `AdventureWorks` → OK.
+   - Oppure da query, sostituendo i percorsi con i tuoi:
      ```sql
      RESTORE DATABASE AdventureWorks
      FROM DISK = 'C:\percorso\AdventureWorks.bak'
