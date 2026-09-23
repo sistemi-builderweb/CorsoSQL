@@ -55,7 +55,12 @@ Il setup richiede solo Visual Studio Code e una tua istanza SQL Server locale su
 5. **Esegui script di verifica**
    - Tasto dx su database AdventureWorks, seleziona "Nuova query"
    - Esegui `scripts/verify-setup.sql` sulla connessione: se la query restituisce righe con conteggi > 0, la connessione e il database sono a posto.
-
+  
+6. **Script di test**
+   - Nell'Object Explorer (icona database a sinistra), 'Explorer'
+   - Aprendo cartella 'scripts' della repository è possibile eseguire gli script di test
+   - Alla prima esecuzione chiederà di connettersi al database restorato al punto precedente
+   
 ## Struttura repository
 
 ```
