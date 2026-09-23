@@ -1,1 +1,2 @@
 backup db/Sample db.bak
+backup db/Sample db.zip
