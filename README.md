@@ -40,22 +40,21 @@ Il setup richiede solo Visual Studio Code e una tua istanza SQL Server locale su
    <sub>In alternativa: apri la scheda Estensioni (`Ctrl+Shift+X`), cerca ciascun nome e clicca "Install".</sub>
    
 
-3. **Ripristina il database sulla tua istanza SQL Server locale**
-   Ti verrà fornito il file di backup `AdventureWorks.bak`. Ripristinalo così:
-   - In **SSMS** (o dall'estensione mssql di VSCode): tasto destro su *Databases* → *Restore Database* → seleziona il file `.bak` → nel campo *Database* scrivi `AdventureWorks` → OK.
-   - Oppure da query, sostituendo i percorsi con i tuoi:
-     ```sql
-     RESTORE DATABASE AdventureWorks
-     FROM DISK = 'C:\percorso\AdventureWorks.bak'
-     WITH MOVE 'AdventureWorks2017' TO 'C:\percorso\dati\AdventureWorks.mdf',
-          MOVE 'AdventureWorks2017_log' TO 'C:\percorso\dati\AdventureWorks_log.ldf',
-          REPLACE;
-     ```
-     (i nomi logici dopo `MOVE` possono variare in base al backup: prima lancia `RESTORE FILELISTONLY FROM DISK = 'C:\percorso\AdventureWorks.bak'` per vederli ed eventualmente correggerli)
+3. Creazione istanza locale SQL Server per ospitare db di test
+   - Scarica [SQL Server Express (gratuito)](https://go.microsoft.com/fwlink/p/?linkid=2216019&clcid=0x409&culture=en-us&country=us)
+   - Avvia il setup e scegli l'installazione "Basic": accetta i valori proposti di default
+   - A fine installazione annota il nome dell'istanza mostrato a schermo (di solito NOMEPC\SQLEXPRESS): ti servirà per connetterti da VSCode
+   - Non serve installare SSMS: da qui in poi puoi fare tutto da VSCode con l'estensione mssql
 
-   Con l'estensione mssql installata, apri la Command Palette (`Ctrl+Shift+P`) → `MS SQL: Connect` e inserisci i parametri della tua istanza (server, autenticazione, database `AdventureWorks`).
+4. **Ripristina il database sulla tua istanza SQL Server locale**
+   - Connettiti alla tua istanza: Ctrl+Shift+P → MS SQL: Connect
+   - Nell'Object Explorer (icona database a sinistra), tasto destro su Databases → Restore Database 
+   - Scegli "From backup file", seleziona il file AdventureWorks.bak (estratto dallo zip)
+   - Verifica che il nome database sia **AdventureWorks** → clicca Restore
 
-   Poi esegui `scripts/verify-setup.sql` sulla connessione: se la query restituisce righe con conteggi > 0, la connessione e il database sono a posto.
+5. **Esegui script di verifica**
+   - Tasto dx su database AdventureWorks, seleziona "Nuova query"
+   - Esegui `scripts/verify-setup.sql` sulla connessione: se la query restituisce righe con conteggi > 0, la connessione e il database sono a posto.
 
 ## Struttura repository
 
