@@ -4,7 +4,7 @@ Repository con tutti gli esempi (notebook/script SQL) usati nelle sezioni del co
 
 Il setup richiede solo Visual Studio Code e una tua istanza SQL Server locale su cui ripristinare il backup fornito.
 
-## 🚀 Avvio in 3 passi
+## 🚀 Avvio in 5 passi
 
 1. **Installa Visual Studio Code** (se non l'hai già fatto): https://code.visualstudio.com/
    Aprilo una volta installato.
@@ -55,11 +55,11 @@ Il setup richiede solo Visual Studio Code e una tua istanza SQL Server locale su
 5. **Esegui script di verifica**
    - Tasto dx su database AdventureWorks, seleziona "Nuova query"
    - Esegui `scripts/verify-setup.sql` sulla connessione: se la query restituisce righe con conteggi > 0, la connessione e il database sono a posto.
-  
-6. **Script di test**
+
+## 🚀 Utilizzo script di test
    - Nell'Object Explorer (icona database a sinistra), 'Explorer'
    - Aprendo cartella 'scripts' della repository è possibile eseguire gli script di test
-   - Alla prima esecuzione chiederà di connettersi al database restorato al punto precedente
+   - Alla prima esecuzione chiederà di connettersi al database di test e occorre selezionare AdventureWorks
    
 ## Struttura repository
 
