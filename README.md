@@ -15,13 +15,13 @@ Il setup è pensato per richiedere il minimo indispensabile: **Docker Desktop** 
    [👉 Clona CorsoSQL in VSCode](https://vscode.dev/redirect?url=vscode://vscode.git/clone?url=https://github.com/sistemi-builderweb/CorsoSQL.git)
    Si apre VSCode con l'indirizzo della repo già inserito: scegli solo la cartella dove salvarla e, a fine clonazione, clicca **Apri** quando richiesto.
 
-   **Se il link non funziona** (capita su alcuni sistemi/browser), fallo a mano:
-   - Premi `Ctrl+Shift+P` (si apre la Command Palette in alto)
-   - Digita `Git: Clone` e premi Invio
-   - Se è la prima volta, VSCode potrebbe chiederti di installare Git: segui il link proposto e installa (basta cliccare "Avanti" per tutta l'installazione), poi riavvia VSCode e ripeti questo passo
-   - Incolla questo indirizzo quando richiesto: `https://github.com/sistemi-builderweb/CorsoSQL.git`
-   - Scegli una cartella sul tuo PC dove salvarla (es. Desktop o Documenti)
-   - Quando la clonazione finisce, VSCode chiede "Apri il repository clonato?" → clicca **Apri** (o "Open")
+      **Se il link non funziona**, fallo a mano:
+      - Premi `Ctrl+Shift+P` (si apre la Command Palette in alto)
+      - Digita `Git: Clone` e premi Invio
+      - Se è la prima volta, VSCode potrebbe chiederti di installare Git: segui il link proposto e installa (basta cliccare "Avanti" per tutta l'installazione), poi riavvia VSCode e ripeti questo passo
+      - Incolla questo indirizzo quando richiesto: `https://github.com/sistemi-builderweb/CorsoSQL.git`
+      - Scegli una cartella sul tuo PC dove salvarla (es. Desktop o Documenti)
+      - Quando la clonazione finisce, VSCode chiede "Apri il repository clonato?" → clicca **Apri** (o "Open")
 
    A questo punto la cartella `CorsoSQL` è aperta in VSCode. Alla prima apertura, VSCode propone da solo l'installazione delle estensioni consigliate (vedi `.vscode/extensions.json`): accetta con un click ("Install All"). Le estensioni sono:
    - **SQL Server (mssql)** — connessione al server ed esecuzione query
