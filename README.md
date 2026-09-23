@@ -31,10 +31,10 @@ A questo punto la cartella `CorsoSQL` è aperta in VSCode. Installa queste 4 est
    - Apri il pannello Estensioni: `Ctrl+Shift+X`
    - In cima alla lista, sotto "WORKSPACE RECOMMENDATIONS", vedrai le 4 estensioni consigliate per questa repo: clicca **Install** su ciascuna
    - Se quella sezione non appare, cerca ciascun nome nella casella di ricerca in alto e clicca **Install**:
-   - **SQL Server (mssql)** — connessione al server ed esecuzione query
-   - **MSSQL Scripts and Utilities** — script rapidi di amministrazione/DML
-   - **MSSQL Snippets** — snippet T-SQL per scrivere query più in fretta
-   - **Poor Man's T-SQL Formatter** — formattazione automatica del codice T-SQL
+      - **SQL Server (mssql)** — connessione al server ed esecuzione query
+      - **MSSQL Scripts and Utilities** — script rapidi di amministrazione/DML
+      - **MSSQL Snippets** — snippet T-SQL per scrivere query più in fretta
+      - **Poor Man's T-SQL Formatter** — formattazione automatica del codice T-SQL
 
    
    <sub>In alternativa: apri la scheda Estensioni (`Ctrl+Shift+X`), cerca ciascun nome e clicca "Install".</sub>
